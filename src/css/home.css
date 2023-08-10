@@ -40,12 +40,19 @@
     position: absolute;
     bottom: 20px;
     max-width: 70vw;
+    color:#FFF;
+    text-align: left;
 }
 .info{
     display: flex;
+    gap:22px;
+    width: 240px;
+}
+.info-text{
+    max-width: 185px;
 }
 .info-text p{
-    color: rgba(38, 38, 38, 0.70);
+    color: rgba(255, 255, 255, 0.70);
     flex-wrap:wrap;
     font-size: 15px;
     font-style: normal;

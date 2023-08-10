@@ -1,64 +1,74 @@
-.header{
-    background-color: white;
-    height: 120px;
+.header {
+  background-color: white;
+  height: 120px;
 }
-.account a{
-    color:black;
+.account a {
+  color: black;
 }
-.account a:hover{
-    color: rgb(32, 61, 180);
+.account a:hover {
+  color: #bd7048;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items:center
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.logo{
-    margin: 40px 0;
+.logo {
+  margin: 40px 0;
 }
-.logo p{
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.logo p {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-.navItems{
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
+.navItems {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
-.navItem{
-    color: rgba(0, 0, 0, 0.50);
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    cursor: pointer;
+.navItem {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
 }
-.navItems a:hover{
-    color: #BD7048;
+.navItems a{
+  transition: color 0.7s ease;  
 }
-.navItems a:active{
-    color: #BD7048;
+.navItems a:hover {
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+}
+.navItems a:not(:hover) {
+  transition: color 0.7s ease;
+  color:inherit;
+}
+.navItems a:active {
+  color: rgba(0, 0, 0, 1);
+  transition: 0.5s;
+  font-weight: 500;
 }
 
-.navDropdown{
-    display: flex;
-    align-items:center;
-    cursor: pointer;
+.navDropdown {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
-.account{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    cursor: pointer;
+.account {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
 }
-.account-line{
-    width: 1px;
-    height: 20px;
-    background-color:rgba(0, 0, 0, 0.3)
+.account-line {
+  width: 1px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
