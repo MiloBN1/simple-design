@@ -1,0 +1,64 @@
+.header{
+    background-color: white;
+    height: 120px;
+}
+.account a{
+    color:black;
+}
+.account a:hover{
+    color: rgb(32, 61, 180);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items:center
+}
+.logo{
+    margin: 40px 0;
+}
+.logo p{
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.navItems{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.navItem{
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+.navItems a:hover{
+    color: #BD7048;
+}
+.navItems a:active{
+    color: #BD7048;
+}
+
+.navDropdown{
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+}
+.account{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+.account-line{
+    width: 1px;
+    height: 20px;
+    background-color:rgba(0, 0, 0, 0.3)
+}
