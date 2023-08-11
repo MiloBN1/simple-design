@@ -1,10 +1,11 @@
 import React from 'react';
-import img1 from "../Assets/img-mainpage/main-1-1.svg"
-import img2 from "../Assets/img-mainpage/main-1-2.svg"
-import img3 from "../Assets/img-mainpage/main-1-3.svg"
-import kaspi from "../Assets/img-mainpage/Kaspi.svg"
+import '../Home-Main/home-main.css';
+import img1 from "../../../Assets/img-mainpage/main-1-1.svg"
+import img2 from "../../../Assets/img-mainpage/main-1-2.svg"
+import img3 from "../../../Assets/img-mainpage/main-1-3.svg"
+import kaspi from "../../../Assets/img-mainpage/Kaspi.svg"
 
-export default function Home() {
+export default function HomeMain() {
   function Consultation(){
     return <button className='btn'>Консультация</button>
   }
@@ -37,7 +38,6 @@ export default function Home() {
                   <img src={kaspi} alt="img" className="img" />
                 </div>
               </div>
-
             </div>
           </div>
         </div>

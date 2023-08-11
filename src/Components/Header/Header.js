@@ -1,12 +1,12 @@
 import React from "react";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import logo from "../Assets/img-mainpage/logo.svg";
-import Home from "../Pages/Home";
-import Test from "../Pages/Test";
-import Catalog from "../Pages/Catalog";
-import About from "../Pages/About";
-import Prices from "../Pages/Prices";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import logo from "../../Assets/img-mainpage/logo.svg";
+import Home from "../../Pages/Home/Index-Home/Index-Home";
+import Test from "../../Pages/TestPage/Test";
+import Catalog from "../../Pages/Catalog/Catalog";
+import About from "../../Pages/About/About";
+import Prices from "../../Pages/Prices/Prices";
+import "../Header/header.css";
 
 const Header = () => {
   return (
@@ -20,11 +20,21 @@ const Header = () => {
             </div>
 
             <div className="navItems">
-              <a className="navItem" href="/">Главная</a>
-              <a className="navItem" href="/Test">Тест</a>
-              <a className="navItem" href="/Catalog">Каталог</a>
-              <a className="navItem" href="/About">О нас</a>
-              <a className="navItem" href="/Prices">Цены</a>
+              <a className="navItem" href="/">
+                Главная
+              </a>
+              <a className="navItem" href="/Test">
+                Тест
+              </a>
+              <a className="navItem" href="/Catalog">
+                Каталог
+              </a>
+              <a className="navItem" href="/About">
+                О нас
+              </a>
+              <a className="navItem" href="/Prices">
+                Цены
+              </a>
               <div className="navDropdown">
                 Контакты
                 <svg
@@ -38,7 +48,7 @@ const Header = () => {
                 </svg>
               </div>
             </div>
-            
+
             <div className="account">
               <a href="/" className="login">
                 Войти
