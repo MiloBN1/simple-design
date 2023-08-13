@@ -1,19 +1,24 @@
 .wrapper{
-    
+    display:flex;
+    position: absolute;
+    right: 0;
+    max-width: calc((100vw - 1186px)/2 + 1186px);
+    margin-top: 150px;
 }
 .infoBlock{
     display: flex;
     flex-direction: column;
     font-style: normal;
     line-height: normal;
-    gap: 70px;
 }
 .infoBlocks{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-style: normal;
     line-height: normal;
     gap: 30px;
+    margin-bottom: 70px;
 }
 .text-group{
     display: flex;
@@ -39,7 +44,8 @@ h4{
     color: rgba(189, 112, 72, 0.20);
     font-size: 70px;
     font-weight: 700;
+    max-width: 80px;
 }
 .img{
-    
+    margin-left: auto;
 }
