@@ -1,0 +1,8 @@
+.wrapper{
+    display:flex;
+    position: absolute;
+    right: 0;
+    max-width: calc((100vw - 1186px)/2 + 1186px);
+    margin-top: 150px;
+    gap: 42px;
+}

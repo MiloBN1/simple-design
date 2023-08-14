@@ -1,15 +1,17 @@
 .wrapper{
     display:flex;
-    position: absolute;
-    right: 0;
+    position: static;
+    margin-right: 0;
     max-width: calc((100vw - 1186px)/2 + 1186px);
     margin-top: 150px;
+    gap: 42px;
 }
 .infoBlock{
     display: flex;
     flex-direction: column;
     font-style: normal;
     line-height: normal;
+    max-width: 500px;
 }
 .infoBlocks{
     display: flex;

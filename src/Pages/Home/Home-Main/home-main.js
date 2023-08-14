@@ -6,15 +6,12 @@ import img3 from "../../../Assets/img-mainpage/main-1-3.svg"
 import kaspi from "../../../Assets/img-mainpage/Kaspi.svg"
 
 export default function HomeMain() {
-  function Consultation(){
-    return <button className='btn'>Консультация</button>
-  }
   return (
     <div className="home">
         <div className="home-wrapper">
           <div className="first-section">
             <h1>Дизайн-проект для вашей квартиры <br/> за 2 недели и 199 000 ₸</h1>
-            <Consultation/>
+            <button className='btn'>Консультация</button>
             <div className="info-block">
               <div className="info">
                 <img src={img1} alt="img" className="img" />
