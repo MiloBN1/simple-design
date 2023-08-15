@@ -5,10 +5,10 @@ import Services from "../ServicesPage/Services"
 import "./index-home.css";
 export default function Home() {
   return (
-    <>
+    <div className="home">
       <HomeMain />
       <Info/>
       <Services/>
-    </>
+    </div>
   );
 }

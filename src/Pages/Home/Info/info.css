@@ -1,8 +1,7 @@
-.wrapper{
+.info-wrapper{
     display:flex;
-    position: static;
-    margin-right: 0;
-    max-width: calc((100vw - 1186px)/2 + 1186px);
+    padding-left: calc((100vw - 1186px)/2);
+    max-width: 100vw;
     margin-top: 150px;
     gap: 42px;
 }

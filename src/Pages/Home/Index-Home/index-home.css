@@ -1,5 +1,6 @@
 .home {
-
+    display: flex;
+    flex-direction: column;
 }
 .home-wrapper{
     max-width: 1186px;
