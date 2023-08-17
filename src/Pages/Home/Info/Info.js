@@ -1,13 +1,13 @@
 import React from "react";
-import styles from"../Info/info.css";
-import "../Info/info.module.css";
+import"../Info/info.css";
+import {H1} from "../Info/Info.styled"
 import Img from "../../../Assets/img-mainpage/main-2.svg";
 
 export default function Info() {
   return (
     <div className="info-wrapper">
       <div className="infoBlock">
-        <h1 className={styles.h1}>Как это работает?</h1>
+        <H1>Как это работает?</H1>
         <div className="infoBlocks">
           <div className="number">01</div>
           <div className="text-group">

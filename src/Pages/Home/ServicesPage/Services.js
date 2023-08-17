@@ -1,14 +1,15 @@
 import React from "react";
 import "../ServicesPage/services.css";
-import styles from "../ServicesPage/services.module.css";
-import Img from "../../../Assets/img-mainpage/main-3.svg";
-import pdf from "../../../Assets/img-mainpage/pdf.svg";
+import Request from "../../../Components/Request/Request";
+import Img1 from "../../../Assets/img-mainpage/main-3.svg";
+import Img2 from "../../../Assets/img-mainpage/main-4.svg";
+import Img3 from "../../../Assets/img-mainpage/main-5.svg";
 
 export default function Services() {
   return (
     <div className="services-wrapper">
-      <h1 className={styles.h1}>Наши услуги</h1>
-      <div className="service-block">
+      <h1>Наши услуги</h1>
+      <div className="service-block-1">
         <div className="service-block-info">
           <h2>Планировка за 99 000 ₸</h2>
           <p>Срок выполнения: 5 дней</p>
@@ -24,18 +25,44 @@ export default function Services() {
             <li>план демонтажа</li>
             <li>план монтажа перегородок</li>
           </ul>
-          <div className="request">
-            <button>Оставить заявку</button>
-            <div className="pdf">
-              <img src={pdf} alt="img"/>
-              <p>Посмотреть пример</p>
-            </div>
-          </div>
+          <Request />
         </div>
-        <img src={Img} alt="img" />
+        <img src={Img1} alt="img" />
       </div>
-      <div className="service-block"></div>
-      <div className="service-block"></div>
+      <div className="service-block-2">
+        <img src={Img2} alt="img" />
+        <div className="service-block-info">
+          <h2>Дизайн-проект за 199 000 ₸</h2>
+          <p>Срок выполнения: 14 дней</p>
+          <p>
+            Разработаем планировочное решение вашей квартиры, далее на его
+            основе мы подготовим альбом, состоящий из 12 чертежей, необходимых
+            строителям для ремонта.
+          </p>
+          <ul>
+            <li>
+              2 варианта планировки + финальный планы демонтажа и монтажа стен
+              розетки, выключатели, освещение сантехника план потолка план пола
+              и плинтусов план дверей
+            </li>
+            <li>планы демонтажа и монтажа стен</li>
+            <li>розетки, выключатели, освещение</li>
+            <li>сантехника</li>
+            <li>план потолка</li>
+            <li>план пола и плинтусов</li>
+            <li>план дверей</li>
+          </ul>
+          <Request />
+        </div>
+      </div>
+      <div className="service-block-3">
+        <img src={Img3} alt="img" />
+        <div className="subBlock">
+          <h2>Планируете ремонт?</h2>
+          <p>Ответьте на несколько вопросов и получите <br/> бесплатный чек-лист по ремонту</p>
+          <button className="subBlock-btn">Получить чек-лист</button>
+        </div>
+      </div>
     </div>
   );
 }
