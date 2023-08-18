@@ -1,7 +1,7 @@
 .home-main {
   background-image: url("../../../Assets/img-mainpage/main-1-background.svg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 

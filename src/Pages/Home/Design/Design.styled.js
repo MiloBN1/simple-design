@@ -20,9 +20,8 @@ export const Text = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 120px auto 0 auto;
   max-width: 1180px;
-  background-color: 333;
 `;
 
 export const Block = styled.div``;
@@ -55,7 +54,7 @@ export const ItemWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 `;
 export const Item = styled.div``;
 export const SubItem = styled.div`
@@ -65,7 +64,7 @@ export const SubItem = styled.div`
   margin-top: 45px;
   max-width: 380px;
 `;
-export const Button = styled.div`
+export const ItemButton = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -75,7 +74,18 @@ export const Button = styled.div`
   background: #f5f5f5;
   cursor: pointer;
 
-  hover{
-    background: #f1f1f1;
-  }
+`;
+export const Button = styled.div`
+display:flex;
+align-items:center;
+justify-content:center;
+width: 228px;
+height: 72px;
+border-radius: 100px;
+background: #bd7048;
+text-align: center;
+color: #fff;
+font-size: 15px;
+font-weight: 600;
+margin:0 auto;
 `;
