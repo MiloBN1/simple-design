@@ -1,29 +1,35 @@
-.services-wrapper {
+import styled from "styled-components";
+
+export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 100vw;
   margin-top: 120px;
   gap: 50px;
-}
-.services-wrapper h1{
+`;
+export const H1 = styled.div`
+  color: #262626;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
   margin-bottom: 40px;
-  margin:auto;
-}
-.service-block-1 {
+  margin: auto;
+`;
+export const Block1 = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 160px;
   padding-left: calc((100vw - 1186px) / 2);
-}
-.service-block-2 {
+`;
+export const Block2 = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 160px;
   padding-right: calc((100vw - 1186px) / 2);
   margin: 50px 0;
-}
-.service-block-3 {
+`;
+export const Block3 = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,45 +37,44 @@
   padding-left: calc((100vw - 1186px) / 2);
   padding-right: calc((100vw - 1186px) / 2);
   margin-top: 75px;
-}
-.service-block-3 p{
-  margin: 40px 0;
-}
-.service-block-info {
+  p {
+    margin: 40px 0;
+  }
+`;
+export const Info = styled.div`
   display: flex;
   flex-direction: column;
   line-height: normal;
   font-style: normal;
   gap: 30px;
-}
-.service-block-info p {
-  color: #000;
-  font-size: 20px;
-  font-weight: 400;
-}
-.service-block-info ul {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.service-block-info h2 {
-  color: #262626;
-  font-size: 30px;
-  font-weight: 600;
-}
-.subBlock{
+  h2 {
+    color: #262626;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  p {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+`;
+export const SubBlock = styled.div`
   width: 563px;
-}
-.subBlock-btn{
+`;
+export const Btn = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 228px;
   height: 74px;
-  flex-shrink: 0;
   border-radius: 100px;
   background: #bd7048;
-  text-align: center;
   color: #fff;
   font-size: 15px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
-}
+`;

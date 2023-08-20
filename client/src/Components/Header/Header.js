@@ -1,4 +1,13 @@
 import React from "react";
+import {
+  Wrapper,
+  Account,
+  AccountLine,
+  Navbar,
+  Logo,
+  NavItems,
+  NavDropdown,
+} from "./Header.styled";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import logo from "../../Assets/img-mainpage/logo.svg";
 import Home from "../../Pages/Home/Index-Home/Index-Home";
@@ -11,15 +20,15 @@ import "../Header/header.css";
 const Header = () => {
   return (
     <>
-      <header className="header">
+      <Wrapper>
         <div className="container">
-          <div className="navbar">
-            <div className="logo">
+          <Navbar>
+            <Logo>
               <img src={logo} alt="logo-img" />
               <p>дизайн интерьеров</p>
-            </div>
+            </Logo>
 
-            <div className="navItems">
+            <NavItems>
               <a className="navItem" href="/">
                 Главная
               </a>
@@ -35,7 +44,7 @@ const Header = () => {
               <a className="navItem" href="/Prices">
                 Цены
               </a>
-              <div className="navDropdown">
+              <NavDropdown>
                 Контакты
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -46,21 +55,21 @@ const Header = () => {
                   viewBox="0 0 16 16">
                   <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                 </svg>
-              </div>
-            </div>
+              </NavDropdown>
+            </NavItems>
 
-            <div className="account">
+            <Account>
               <a href="/" className="login">
                 Войти
               </a>
-              <div className="account-line"></div>
+              <AccountLine></AccountLine>
               <a href="/" className="regist">
                 Зарегистрироваться
               </a>
-            </div>
-          </div>
+            </Account>
+          </Navbar>
         </div>
-      </header>
+      </Wrapper>
 
       <Router>
         <Routes>

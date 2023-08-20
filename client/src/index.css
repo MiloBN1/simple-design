@@ -37,7 +37,10 @@ a:hover {
 }
 
 /* Common */
-
+p{
+  line-height: normal;
+  font-style: normal;
+}
 
 img {
   vertical-align: top;

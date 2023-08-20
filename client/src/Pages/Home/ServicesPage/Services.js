@@ -1,5 +1,5 @@
 import React from "react";
-import "../ServicesPage/services.css";
+import { Wrapper, H1, Block1, Block2, Block3, Info, SubBlock, Btn} from "./Services.styled";
 import Request from "../../../Components/Request/Request";
 import Img1 from "../../../Assets/img-mainpage/main-3.svg";
 import Img2 from "../../../Assets/img-mainpage/main-4.svg";
@@ -7,10 +7,10 @@ import Img3 from "../../../Assets/img-mainpage/main-5.svg";
 
 export default function Services() {
   return (
-    <div className="services-wrapper">
-      <h1>Наши услуги</h1>
-      <div className="service-block-1">
-        <div className="service-block-info">
+    <Wrapper>
+      <H1>Наши услуги</H1>
+      <Block1>
+        <Info>
           <h2>Планировка за 99 000 ₸</h2>
           <p>Срок выполнения: 5 дней</p>
           <p>
@@ -26,12 +26,12 @@ export default function Services() {
             <li>план монтажа перегородок</li>
           </ul>
           <Request />
-        </div>
+        </Info>
         <img src={Img1} alt="img" />
-      </div>
-      <div className="service-block-2">
+      </Block1>
+      <Block2>
         <img src={Img2} alt="img" />
-        <div className="service-block-info">
+        <Info>
           <h2>Дизайн-проект за 199 000 ₸</h2>
           <p>Срок выполнения: 14 дней</p>
           <p>
@@ -53,16 +53,16 @@ export default function Services() {
             <li>план дверей</li>
           </ul>
           <Request />
-        </div>
-      </div>
-      <div className="service-block-3">
+        </Info>
+      </Block2>
+      <Block3>
         <img src={Img3} alt="img" />
-        <div className="subBlock">
+        <SubBlock>
           <h2>Планируете ремонт?</h2>
           <p>Ответьте на несколько вопросов и получите <br/> бесплатный чек-лист по ремонту</p>
-          <button className="subBlock-btn">Получить чек-лист</button>
-        </div>
-      </div>
-    </div>
+          <Btn>Получить чек-лист</Btn>
+        </SubBlock>
+      </Block3>
+    </Wrapper>
   );
 }
