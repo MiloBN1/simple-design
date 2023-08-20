@@ -4,7 +4,8 @@ import Info from '../Info/Info';
 import Services from "../ServicesPage/Services";
 import Design from "../Design/Design";
 import TestPageLink from "../TestPageLink/TestLink";
-import Questions from "../Questions/Questions"
+import Questions from "../Questions/Questions";
+import Footer from "../../../Components/Footer/Footer"
 import "./index-home.css";
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Design/>
       <TestPageLink/>
       <Questions/>
+      <Footer/>
     </div>
   );
 }
