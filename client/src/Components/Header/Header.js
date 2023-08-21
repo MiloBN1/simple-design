@@ -1,4 +1,4 @@
-import {React,useState} from "react";
+import { React, useState } from "react";
 import {
   Wrapper,
   Account,
@@ -9,7 +9,10 @@ import {
   NavDropdown,
 } from "./Header.styled";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import logo from "../../Assets/img-mainpage/logo.svg";
+import phone from "../../Assets/img-mainpage/phone.svg";
+
 import Home from "../../Pages/Home/Index-Home/Index-Home";
 import Test from "../../Pages/TestPage/Test";
 import Catalog from "../../Pages/Catalog/Catalog";
@@ -18,7 +21,25 @@ import Prices from "../../Pages/Prices/Prices";
 import "../Header/header.css";
 
 const Header = () => {
-  const [dropDown, setDropdown] = useState(false);
+  const DropDown = () => {
+    return (
+      <NavDropdown>
+        <ul>
+          <li>
+            <img src={phone} alt="img"/>
+            +7 700 505 3000
+            </li>
+          <li>с 9:00 до 18:00</li>
+        </ul>
+      </NavDropdown>
+    );
+  };
+
+  const [openDropDown, setOpenDropdown] = useState(false);
+
+  const toggleDropdown = () => {
+    setOpenDropdown(!openDropDown);
+  };
 
   return (
     <>
@@ -46,20 +67,11 @@ const Header = () => {
               <a className="navItem" href="/Prices">
                 Цены
               </a>
-              <NavDropdown>
+              <span onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
                 Контакты
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="black"
-                  class="arrow-down"
-                  viewBox="0 0 16 16">
-                  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                </svg>
-              </NavDropdown>
+              </span>
             </NavItems>
-
+            {openDropDown && <DropDown />}
             <Account>
               <a href="/" className="login">
                 Войти

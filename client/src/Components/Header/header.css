@@ -1,8 +1,14 @@
 .navItem {
   color: rgba(0, 0, 0, 0.5);
   font-size: 15px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   cursor: pointer;
+}
+.navItem a {
+  transition: color 0.7s ease;
+}
+.navItem a:hover {
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+  font-size: 17px;
 }
