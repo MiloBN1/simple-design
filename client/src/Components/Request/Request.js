@@ -1,15 +1,15 @@
-import React from 'react'
-import "../Request/request.css"
+import React from "react";
+import { Wrapper, Pdf } from "./Request.styled";
 import pdf from "../../Assets/img-mainpage/pdf.svg";
 
 export default function Request() {
   return (
-    <div className="request">
-            <button>Оставить заявку</button>
-            <div className="pdf">
-              <img src={pdf} alt="img"/>
-              <p>Посмотреть пример</p>
-            </div>
-          </div>
-  )
+    <Wrapper>
+      <button>Оставить заявку</button>
+      <Pdf>
+        <img src={pdf} alt="img" />
+        <p>Посмотреть пример</p>
+      </Pdf>
+    </Wrapper>
+  );
 }

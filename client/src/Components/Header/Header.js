@@ -1,4 +1,4 @@
-import React from "react";
+import {React,useState} from "react";
 import {
   Wrapper,
   Account,
@@ -18,6 +18,8 @@ import Prices from "../../Pages/Prices/Prices";
 import "../Header/header.css";
 
 const Header = () => {
+  const [dropDown, setDropdown] = useState(false);
+
   return (
     <>
       <Wrapper>
