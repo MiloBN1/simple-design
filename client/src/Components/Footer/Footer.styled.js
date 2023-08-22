@@ -27,17 +27,17 @@ export const FooterTop = styled.div`
     list-style-type: none;
   }
   li {
-    display:flex;
-    gap:10px;
-    margin-bottom:5px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
     color: rgba(33, 33, 33, 0.5);
     font-size: 15px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    cursor: pointer;
   }
 `;
 export const FooterBlock = styled.div`
-
 `;
-export const Logo = styled.div``;
+export const Logo = styled.div`
+  cursor: pointer;
+`;

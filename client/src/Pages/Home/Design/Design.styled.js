@@ -73,19 +73,21 @@ export const ItemButton = styled.div`
   border-radius: 100px;
   background: #f5f5f5;
   cursor: pointer;
-
 `;
 export const Button = styled.div`
-display:flex;
-align-items:center;
-justify-content:center;
-width: 228px;
-height: 72px;
-border-radius: 100px;
-background: #bd7048;
-text-align: center;
-color: #fff;
-font-size: 15px;
-font-weight: 600;
-margin:0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 228px;
+  height: 74px;
+  border-radius: 100px;
+  background: #bd7048;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background: #d87e4d;
+  }
 `;

@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "../Home-Main/home-main.css";
-import {Wrapper, Btn, InfoBlock, Info, Text} from "./Home-main.styled";
+import { Wrapper, Btn, InfoBlock, Info, Text } from "./Home-main.styled";
 import img1 from "../../../Assets/img-mainpage/main-1-1.svg";
 import img2 from "../../../Assets/img-mainpage/main-1-2.svg";
 import img3 from "../../../Assets/img-mainpage/main-1-3.svg";
@@ -13,7 +15,11 @@ export default function HomeMain() {
         <h1>
           Дизайн-проект для вашей квартиры <br /> за 2 недели и 199 000 ₸
         </h1>
-        <Btn>Консультация</Btn>
+
+        <Link to="/contact">
+          <Btn>Консультация</Btn>
+        </Link>
+
         <InfoBlock>
           <Info>
             <img src={img1} alt="img" className="img" />

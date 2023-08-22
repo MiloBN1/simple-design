@@ -25,6 +25,11 @@ export const Btn = styled.div`
   color: #fff;
   font-size: 15px;
   font-weight: 600;
+  transition: 0.4s ease-in-out;
+  cursor:pointer;
+  &:hover {
+    background: #d87e4d;
+  }
 `;
 export const InfoBlock = styled.div`
   display: flex;

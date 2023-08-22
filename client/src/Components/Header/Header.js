@@ -8,6 +8,7 @@ import {
   NavItems,
   NavDropdown,
 } from "./Header.styled";
+import "../Header/header.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import logo from "../../Assets/img-mainpage/logo.svg";
@@ -18,7 +19,7 @@ import Test from "../../Pages/TestPage/Test";
 import Catalog from "../../Pages/Catalog/Catalog";
 import About from "../../Pages/About/About";
 import Prices from "../../Pages/Prices/Prices";
-import "../Header/header.css";
+import Contact from "../../Pages/Contact/Contact"
 
 const Header = () => {
   const DropDown = () => {
@@ -92,6 +93,7 @@ const Header = () => {
           <Route exact path="/Catalog" element={<Catalog />} />
           <Route exact path="/About" element={<About />} />
           <Route exact path="/Prices" element={<Prices />} />
+          <Route exact path="/Contact" element={<Contact />} />
         </Routes>
       </Router>
     </>
