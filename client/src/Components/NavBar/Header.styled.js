@@ -68,7 +68,7 @@ export const NavDropdown = styled.div`
     height: 80px;
     position: absolute;
     top: 80px;
-    right: 500px;
+    right: 490px;
     background: white;
     list-style-type: none;
     border: 1px solid rgba(0, 0, 0, 0.6);

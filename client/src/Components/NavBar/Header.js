@@ -102,7 +102,6 @@ const Header = () => {
           <Route exact path="/Designs" element={<Designs />} />
         </Routes>
       </Router>
-      ;
     </>
   );
 };
