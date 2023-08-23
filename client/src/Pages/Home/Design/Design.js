@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   H1,
   Wrapper,
@@ -14,7 +15,7 @@ import {
   Button,
   ItemButton,
 } from "../Design/Design.styled";
-import bag from "../../../Assets/img-mainpage/bag.svg"
+import bag from "../../../Assets/img-mainpage/bag.svg";
 import img1 from "../../../Assets/img-mainpage/living-room-1.svg";
 import img2 from "../../../Assets/img-mainpage/living-room-2.svg";
 import img3 from "../../../Assets/img-mainpage/living-room-3.svg";
@@ -33,6 +34,7 @@ export default function Design() {
         Выбирая дизайн комнаты, вы получаете смету со списком всех предметов в
         интерьере, названиями, артикулами, цветом стен и так далее.
       </Text>
+
       <Block>
         <BlockName>
           <H3>Гостиные</H3>
@@ -43,10 +45,12 @@ export default function Design() {
             <img src={img1} alt="img" />
             <SubItem>
               <H4>Акварель</H4>
-              <ItemButton>
-              <img src={bag} alt="img" />
-                Выбрать
-              </ItemButton>
+              <Link to="/designs">
+                <ItemButton>
+                  <img src={bag} alt="img" />
+                  Выбрать
+                </ItemButton>
+              </Link>
             </SubItem>
           </Item>
 
@@ -54,10 +58,12 @@ export default function Design() {
             <img src={img2} alt="img" />
             <SubItem>
               <H4>Ира</H4>
-              <ItemButton>
-              <img src={bag} alt="img" />
-                Выбрать
-              </ItemButton>
+              <Link to="/designs">
+                <ItemButton>
+                  <img src={bag} alt="img" />
+                  Выбрать
+                </ItemButton>
+              </Link>
             </SubItem>
           </Item>
 
@@ -65,10 +71,12 @@ export default function Design() {
             <img src={img3} alt="img" />
             <SubItem>
               <H4>Нурс</H4>
-              <ItemButton>
-              <img src={bag} alt="img" />
-                Выбрать
-              </ItemButton>
+              <Link to="/designs">
+                <ItemButton>
+                  <img src={bag} alt="img" />
+                  Выбрать
+                </ItemButton>
+              </Link>
             </SubItem>
           </Item>
         </ItemWrapper>
@@ -84,10 +92,12 @@ export default function Design() {
             <img src={img4} alt="img" />
             <SubItem>
               <H4>Синяя</H4>
-              <ItemButton>
-              <img src={bag} alt="img" />
-                Выбрать
-              </ItemButton>
+              <Link to="/designs">
+                <ItemButton>
+                  <img src={bag} alt="img" />
+                  Выбрать
+                </ItemButton>
+              </Link>
             </SubItem>
           </Item>
 
@@ -95,10 +105,12 @@ export default function Design() {
             <img src={img5} alt="img" />
             <SubItem>
               <H4>Розовая</H4>
-              <ItemButton>
-              <img src={bag} alt="img" />
-                Выбрать
-              </ItemButton>
+              <Link to="/designs">
+                <ItemButton>
+                  <img src={bag} alt="img" />
+                  Выбрать
+                </ItemButton>
+              </Link>
             </SubItem>
           </Item>
 
@@ -106,10 +118,12 @@ export default function Design() {
             <img src={img6} alt="img" />
             <SubItem>
               <H4>Яркая</H4>
-              <ItemButton>
-              <img src={bag} alt="img" />
-                Выбрать
-              </ItemButton>
+              <Link to="/designs">
+                <ItemButton>
+                  <img src={bag} alt="img" />
+                  Выбрать
+                </ItemButton>
+              </Link>
             </SubItem>
           </Item>
         </ItemWrapper>
@@ -125,10 +139,12 @@ export default function Design() {
             <img src={img7} alt="img" />
             <SubItem>
               <H4>Ирина</H4>
-              <ItemButton>
-              <img src={bag} alt="img" />
-                Выбрать
-              </ItemButton>
+              <Link to="/designs">
+                <ItemButton>
+                  <img src={bag} alt="img" />
+                  Выбрать
+                </ItemButton>
+              </Link>
             </SubItem>
           </Item>
 
@@ -136,10 +152,12 @@ export default function Design() {
             <img src={img8} alt="img" />
             <SubItem>
               <H4>Акварель</H4>
-              <ItemButton>
-              <img src={bag} alt="img" />
-                Выбрать
-              </ItemButton>
+              <Link to="/designs">
+                <ItemButton>
+                  <img src={bag} alt="img" />
+                  Выбрать
+                </ItemButton>
+              </Link>
             </SubItem>
           </Item>
 
@@ -147,18 +165,20 @@ export default function Design() {
             <img src={img9} alt="img" />
             <SubItem>
               <H4>Кадыр</H4>
-              <ItemButton>
-              <img src={bag} alt="img" />
-                Выбрать
-              </ItemButton>
+              <Link to="/designs">
+                <ItemButton>
+                  <img src={bag} alt="img" />
+                  Выбрать
+                </ItemButton>
+              </Link>
             </SubItem>
           </Item>
         </ItemWrapper>
       </Block>
 
-      <Button>
-      К каталогу комнат
-      </Button>
+      <Link to="/catalog">
+        <Button>К каталогу комнат</Button>
+      </Link>
     </Wrapper>
   );
 }

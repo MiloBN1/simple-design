@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "../Home-Main/home-main.css";
 import { Wrapper, Btn, InfoBlock, Info, Text } from "./Home-main.styled";
 import img1 from "../../../Assets/img-mainpage/main-1-1.svg";

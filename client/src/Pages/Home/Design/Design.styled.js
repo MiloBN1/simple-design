@@ -73,6 +73,7 @@ export const ItemButton = styled.div`
   border-radius: 100px;
   background: #f5f5f5;
   cursor: pointer;
+  color:black;
 `;
 export const Button = styled.div`
   display: flex;

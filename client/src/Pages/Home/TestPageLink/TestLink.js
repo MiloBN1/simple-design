@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Wrapper, H1, Text, Button } from "../TestPageLink/TestLink.styled";
-import "./testLink.css"
+import "./testLink.css";
 
 export default function TestLink() {
   return (
@@ -10,7 +11,9 @@ export default function TestLink() {
         <Text>
           Пройдите короткий тест и мы покажем подходящие вам стилевые решения
         </Text>
-        <Button>Пройти тест</Button>
+        <Link to="/test">
+          <Button>Пройти тест</Button>
+        </Link>
       </Wrapper>
     </div>
   );

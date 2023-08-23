@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Wrapper, H1, Block1, Block2, Block3, Info, SubBlock, Btn} from "./Services.styled";
-import Request from "../../../Components/Request/Request";
+import Request from "../../../Components/RequestLink/Request";
 import Img1 from "../../../Assets/img-mainpage/main-3.svg";
 import Img2 from "../../../Assets/img-mainpage/main-4.svg";
 import Img3 from "../../../Assets/img-mainpage/main-5.svg";
@@ -60,7 +61,9 @@ export default function Services() {
         <SubBlock>
           <h2>Планируете ремонт?</h2>
           <p>Ответьте на несколько вопросов и получите <br/> бесплатный чек-лист по ремонту</p>
+          <Link to="/request">
           <Btn>Получить чек-лист</Btn>
+          </Link>
         </SubBlock>
       </Block3>
     </Wrapper>

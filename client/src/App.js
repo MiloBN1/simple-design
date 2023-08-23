@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../src/Components/Header/Header';
+import Header from '../src/Components/NavBar/Header';
 
 export default function App() {
   return (

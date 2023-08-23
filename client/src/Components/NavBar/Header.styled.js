@@ -47,7 +47,7 @@ export const NavItems = styled.div`
   margin-left: 230px;
   span {
     color: rgba(0, 0, 0, 0.5);
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     cursor: pointer;
   }

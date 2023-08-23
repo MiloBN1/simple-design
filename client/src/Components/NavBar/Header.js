@@ -8,18 +8,21 @@ import {
   NavItems,
   NavDropdown,
 } from "./Header.styled";
-import "../Header/header.css";
+import "./header.css";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import logo from "../../Assets/img-mainpage/logo.svg";
-import phone from "../../Assets/img-mainpage/phone.svg";
-
 import Home from "../../Pages/Home/Index-Home/Index-Home";
 import Test from "../../Pages/TestPage/Test";
 import Catalog from "../../Pages/Catalog/Catalog";
 import About from "../../Pages/About/About";
 import Prices from "../../Pages/Prices/Prices";
-import Contact from "../../Pages/Contact/Contact"
+import Contact from "../../Pages/Contact/Contact";
+import Request from "../../Pages/Request/Request";
+import Privacy from "../../Pages/Privacy/Privacy";
+import Designs from "../../Pages/Designs/Designs";
+
+import logo from "../../Assets/img-mainpage/logo.svg";
+import phone from "../../Assets/img-mainpage/phone.svg";
 
 const Header = () => {
   const DropDown = () => {
@@ -27,9 +30,9 @@ const Header = () => {
       <NavDropdown>
         <ul>
           <li>
-            <img src={phone} alt="img"/>
+            <img src={phone} alt="img" />
             +7 700 505 3000
-            </li>
+          </li>
           <li>с 9:00 до 18:00</li>
         </ul>
       </NavDropdown>
@@ -85,7 +88,7 @@ const Header = () => {
           </Navbar>
         </div>
       </Wrapper>
-
+      
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -94,8 +97,12 @@ const Header = () => {
           <Route exact path="/About" element={<About />} />
           <Route exact path="/Prices" element={<Prices />} />
           <Route exact path="/Contact" element={<Contact />} />
+          <Route exact path="/Request" element={<Request />} />
+          <Route exact path="/Privacy" element={<Privacy />} />
+          <Route exact path="/Designs" element={<Designs />} />
         </Routes>
       </Router>
+      ;
     </>
   );
 };
