@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import Login from "../Modals/Login/Login";
+import Regist from "../Modals/Registration/Regist";
 import Routing from "./Router";
 import {
   Wrapper,
@@ -36,6 +37,7 @@ const Header = () => {
     setOpenDropdown(!openDropDown);
   };
 
+  const [loginActive, setLoginActive] = useState(false);
   const [modalActive, setModalActive] = useState(false);
 
   return (
@@ -75,15 +77,21 @@ const Header = () => {
               <span
                 href="/"
                 className="loginBtn"
-                onClick={() => setModalActive(true)}>
+                onClick={() => setLoginActive(true)}>
                 Войти
               </span>
-              <Login active={modalActive} setActive={setModalActive}/>
+              <Login active={loginActive} setActive={setLoginActive} />
               {/* MODAL END*/}
               <AccountLine></AccountLine>
-              <span href="/" className="regist">
+              {/* MODAL START*/}
+              <span
+                href="/"
+                className="registBtn"
+                onClick={() => setModalActive(true)}>
                 Зарегистрироваться
               </span>
+              <Regist active={modalActive} setActive={setModalActive} />
+              {/* MODAL END*/}
             </Account>
             <label class="burger" for="burger">
               <input type="checkbox" id="burger" />

@@ -1,0 +1,26 @@
+.regist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: 0.4s all;
+  opacity: 0;
+  pointer-events: none;
+}
+.regist.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.regist-content {
+  border-radius: 10px;
+  background: white;
+  border-radius: 10px;
+  height: 70vh;
+  width: 30vw;
+}
