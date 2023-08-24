@@ -4,3 +4,10 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
+.bag{
+  background:white;
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+  border-radius: 20px;
+}
