@@ -4,7 +4,7 @@ import "./Regist.css";
 const Regist = ({ active, setActive }) => {
   return (
     <div
-      className={active ? "regist active" : "login"}
+      className={active ? "regist active" : "regist"}
       onClick={() => setActive(false)}>
       <div className="regist-content" onClick={(e) => e.stopPropagation()}>
         {/* FORM START */}
